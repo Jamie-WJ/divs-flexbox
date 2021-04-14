@@ -101,30 +101,76 @@ html {
   height: 100%;
 }
 
+header,
+main,
+footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    background-color: #be898a;
+    color:#fbfef9;
+}
+
+header,
+footer {
+    height: 80px;
+    width: 100%;
+}
+
+header {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+main{ 
+    height: 200px;
+    width: 100%;
+    font-size: 1.8em;
+    border-bottom: 1px solid #fbfef9;
+}
+
+span{
+    font-weight: 700;
+}
+
+
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;  
   padding: 2em;
   font-size: 1em;
   height: 100%;
-  background-color: #483a58;
+  background-color: #be898a;
 }
 
 .wrapper {
   display:flex;
   justify-content: space-between;
-  font-weight: 700;
+  align-items: center;
+  font-weight: 700px;
+  flex-flow: row wrap; 
 }
 
 .div-1, .div-2, .div-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #fbfef9;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #483a58;
+  font-size: 1.5em;
+  background-color: #be898a;
   height: 300px;
   width: 30%;
+}
+
+footer {
+  border-top: 1px solid #fbfef9;
+}
+
+ul li{
+    display:inline-block;
+    padding-inline-start: 10px;
 }
 
 
@@ -212,12 +258,13 @@ body {
    Modify as content requires.
    ========================================================================== */
    @media all and (min-width: 1200px) {
-    .div-1, .div-2, .div-3 {
+    .div-1, .div-2, .div-3{
       flex-basis: 30%;
     }
 
+
     .div-1, .div-2 {
-      border-right: 1px solid #fff;
+      border-right: 1px solid #fbfef9;
       padding-right: 30px;
     }
 }
